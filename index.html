@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portfolio Page</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;600&display=swap"
+    rel="stylesheet">
+
+    <!-- Font Awesome per le icone dei brand/social -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Collegamento al file CSS nella cartella assets/css/ -->
+    <link rel="stylesheet" href="assets/css/Stile.css">
+
+    <!-- Google Material Symbols per le icone generali -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+</head>
+
+<body>
+
+    <!-- INTESTAZIONE PRINCIPALE -->
+    <header id="intestazione-sito">
+
+        <h1>Louis Pagliaro</h1>
+
+        <p class="sottotitolo">
+            <strong>Studente Full Stack</strong> — corso Epicode 2026
+        </p>
+
+        <!-- BARRA DI NAVIGAZIONE -->
+        <nav>
+            <ul>
+                <li><a href="#chi-sono"><span class="material-symbols-outlined">person</span> Chi sono</a></li>
+                <li><a href="#competenze"><span class="material-symbols-outlined">code</span> Competenze</a></li>
+                <li><a href="#esperienze"><span class="material-symbols-outlined">work</span> Esperienze</a></li>
+                <li><a href="#progetti"><span class="material-symbols-outlined">folder</span> Progetti</a></li>
+                <li><a href="#contatti"><span class="material-symbols-outlined">mail</span> Contatti</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <!-- CONTENUTO PRINCIPALE -->
+    <main>
+
+        <!-- SEZIONE CHI SONO -->
+        <section id="chi-sono">
+
+            <h2>Chi sono</h2>
+
+            <div class="foto-profilo">
+                <img src="assets/img/foto-profilo.jpeg"
+                    alt="Foto di Louis Pagliaro"
+                    title="Foto profilo"
+                    width="200"
+                    height="200">
+            </div>
+
+            <p>
+                <span class="capolettera">M</span>i chiamo Louis Pagliaro e sto imparando a programmare.
+                Studio sviluppo web con <strong>Epicode</strong> e ogni giorno aggiungo qualcosa di nuovo a questa pagina.
+                Mi piace lavorare in gruppo, leggere documentazione tecnica e capire come funzionano le cose.
+            </p>
+
+            <p>
+                Vivo a Palmi. Ho una formazione precedente in
+                <em>Elettronica</em> e ora sto cambiando settore.
+                Cerco un primo ruolo come sviluppatore full stack.
+            </p>
+
+        </section>
+
+
+        <!-- SEZIONE COMPETENZE -->
+        <section id="competenze">
+
+            <h2>Competenze</h2>
+
+            <p>
+                Le tecnologie che vedo durante le prime settimane di corso.
+            </p>
+
+            <p class="titolo-secondario">Stack tecnico: autovalutazione</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tecnologia</th>
+                        <th>Livello</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td class="tecnologia">
+                            <span class="material-symbols-outlined">html</span>
+                            <b>HTML5</b>
+                            <span class="sotto-testo">Struttura delle pagine, tag semantici, attributi e form</span>
+                        </td>
+
+                        <td>
+                            <div class="barra">
+                                <span class="livello-html"></span>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="tecnologia">
+                            <span class="material-symbols-outlined">css</span>
+                            <b>CSS3</b>
+                            <span class="sotto-testo">Selettori, colori, font, box model e margini</span>
+                        </td>
+
+                        <td>
+                            <div class="barra">
+                                <span class="livello-css"></span>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="tecnologia">
+                            <span class="material-symbols-outlined">fork_right</span>
+                            <b>Git e GitHub</b>
+                            <span class="sotto-testo">Repository, commit, push e gestione del codice</span>
+                        </td>
+
+                        <td>
+                            <div class="barra">
+                                <span class="livello-git"></span>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="tecnologia">
+                            <span class="material-symbols-outlined">terminal</span>
+                            <b>Visual Studio Code</b>
+                            <span class="sotto-testo">Scrittura e organizzazione dei file HTML e CSS</span>
+                        </td>
+
+                        <td>
+                            <div class="barra">
+                                <span class="livello-vscode"></span>
+                            </div>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+        </section>
+
+
+        <!-- SEZIONE ESPERIENZE -->
+        <section id="esperienze">
+
+            <h2>Esperienze</h2>
+
+            <p>
+                Un riepilogo del mio percorso formativo e lavorativo recente.
+            </p>
+
+            <table>
+
+                <caption>Esperienze formative e lavorative</caption>
+
+                <thead>
+                    <tr>
+                        <th>Anno</th>
+                        <th>Ruolo</th>
+                        <th>Azienda / Scuola</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>2026</td>
+                        <td>Studente Full Stack</td>
+                        <td>Epicode</td>
+                    </tr>
+
+                    <tr>
+                        <td>2024 - 2025</td>
+                        <td>Libraio</td>
+                        <td>Libreria Centrale</td>
+                    </tr>
+
+                    <tr>
+                        <td>2016 - 2021</td>
+                        <td>Studente di MATT</td>
+                        <td>Galileo Galilei caltanissetta</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+
+        <!-- SEZIONE PROGETTI -->
+        <section id="progetti">
+
+            <h2>Progetti</h2>
+
+            <p>
+                I lavori fatti durante le prime settimane di corso.
+            </p>
+
+
+            <!-- PROGETTO 1 -->
+            <article class="progetto">
+
+                <h3>
+                    Pagina ricetta
+                    <span class="distintivo">NEW</span>
+                </h3>
+
+                <p>
+                    Una pagina con titolo, ingredienti e procedura.
+                    Esercizio di markup semantico applicato a un contenuto reale.
+                </p>
+
+                <p>
+                    <a href="#">Vedi su GitHub</a>
+                </p>
+
+            </article>
+
+
+            <!-- PROGETTO 2 -->
+            <article class="progetto">
+
+                <h3>
+                    Card di presentazione
+                    <span class="material-symbols-outlined">web</span>
+                </h3>
+
+                <p>
+                    Un biglietto digitale con nome, ruolo e link ai social.
+                    Esercizio di sintesi sulla struttura HTML.
+                </p>
+
+                <p>
+                    <a href="#">Vedi su GitHub</a>
+                </p>
+
+            </article>
+
+
+            <!-- PROGETTO 3 -->
+            <article class="progetto">
+
+                <h3>
+                    Portfolio Personale
+                    <span class="material-symbols-outlined">account_box</span>
+                </h3>
+
+                <p>
+                    Questa pagina web. Costruita da zero in HTML e CSS per raccogliere il mio percorso formativo.
+                </p>
+
+                <p>
+                    <a href="https://github.com/Lokill0" target="_blank">Vedi su GitHub</a>
+                </p>
+
+            </article>
+
+        </section>
+
+
+        <!-- SEZIONE CONTATTI -->
+        <section id="contatti">
+
+            <h2>Contatti</h2>
+
+            <p>
+                Sono presente su queste piattaforme professionali,
+                dove puoi seguire i miei progetti e contattarmi.
+            </p>
+
+            <p>
+                Profilo GitHub:
+                <a href="https://github.com/Lokill0" target="_blank">github.com/Lokill0</a>
+            </p>
+
+            <p>
+                Profilo LinkedIn:
+                <a href="Https://www.linkedin.com/in/louis-pagliaro-63826a253?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">linkedin.com/in/louis-pagliaro</a>
+            </p>
+
+
+            <h2>Contattami</h2>
+
+            <p>
+                Compila il form per scrivermi. Ti rispondo entro 24 ore.
+            </p>
+
+
+            <!-- MODULO DI CONTATTO -->
+            <form action="/contatti" method="get">
+
+                <label for="Nome">Nome:</label>
+                <br>
+                <input type="text"
+                    id="Nome"
+                    name="Nome"
+                    placeholder="Il tuo nome"
+                    required>
+
+                <br><br>
+
+                <label for="Email">Email:</label>
+                <br>
+                <input type="email"
+                    id="Email"
+                    name="Email"
+                    placeholder="tu@esempio.it"
+                    required>
+
+                <br><br>
+
+                <label for="Motivo">Motivo del contatto:</label>
+                <br>
+
+                <select id="Motivo" name="Motivo" required>
+                    <option value="lavoro">Proposta di lavoro</option>
+                    <option value="be">Back-end</option>
+                    <option value="fe">Front-end</option>
+                    <option value="fs">Full-stack</option>
+                </select>
+
+                <br><br>
+
+                <label for="Data">Data preferita per la risposta:</label>
+                <br>
+                <input type="date"
+                    id="Data"
+                    name="Data"
+                    required>
+
+                <br><br>
+
+                <label for="Messaggio">Messaggio:</label>
+                <br>
+
+                <textarea id="Messaggio"
+                    name="Messaggio"
+                    rows="3"
+                    cols="30"
+                    placeholder="Si prega di ringraziare il prof. Dario Del Giudice..."
+                    required></textarea>
+
+                <br><br>
+
+                <input type="checkbox"
+                    id="contatto"
+                    name="contatto"
+                    value="si"
+                    required>
+
+                <label for="contatto">
+                    Accetto di essere ricontattato all'indirizzo indicato
+                </label>
+
+                <br><br>
+
+                <button type="submit">Invia</button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!---- FOOTER -->
+    <footer id="pie-di-pagina">
+
+        <div class="contenitore-social">
+            <a href="https://github.com/Lokill0" target="_blank" class="icona-social" title="GitHub">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="Https://www.linkedin.com/in/louis-pagliaro-63826a253?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="icona-social" title="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+        </div>
+
+        <p>© 2026 Louis Pagliaro</p>
+
+    </footer>
+
+</body>
+
+</html>

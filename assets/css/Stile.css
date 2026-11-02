@@ -1,0 +1,453 @@
+/* RESET GENERALE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* IMPOSTAZIONI GENERALI */
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #2b2b2b;
+    background-color: #f4f1ec;
+}
+
+/* IMMAGINI RESPONSIVE */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* HEADER */
+header {
+    background-image: url('../img/header-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-color: hsl(220, 60%, 30%);
+    color: white;
+    text-align: center;
+    border-bottom: 4px solid hsl(45, 90%, 60%);
+    text-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+    padding: 20px 12px 0;
+    position: relative;
+    z-index: 1;
+}
+
+h1,
+h2,
+h3,
+.capolettera {
+    font-family: 'Playfair Display', Georgia, serif;
+}
+
+header h1 {
+    font-size: clamp(1.8rem, 5vw, 3rem);
+    font-weight: bold;
+    font-style: italic;
+}
+
+header .sottotitolo {
+    color: #f0e7c8;
+    font-style: italic;
+}
+
+/* NAVIGAZIONE */
+nav {
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.35);
+    position: relative;
+    z-index: 10;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+nav a {
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+    line-height: 3;
+    text-decoration: none;
+    padding: 0 8px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+nav a .material-symbols-outlined {
+    vertical-align: middle;
+    font-size: 1.2rem;
+    margin-right: 4px;
+}
+
+nav a:hover {
+    color: hsl(220, 60%, 20%);
+    background-color: hsl(45, 90%, 60%);
+    border-color: hsl(45, 90%, 60%);
+}
+
+/* CONTENUTO PRINCIPALE */
+main {
+    width: 94%;
+    max-width: 1100px;
+    margin: 20px auto;
+    position: relative;
+    z-index: 2;
+}
+
+section {
+    background-color: white;
+    padding: 18px;
+    margin-bottom: 20px;
+    border: 1px solid #e6e0d3;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+    position: relative;
+}
+
+.capolettera {
+    font-size: 3rem;
+    font-weight: bold;
+    color: hsl(220, 60%, 30%);
+}
+
+section h2 {
+    color: hsl(220, 60%, 25%);
+    font-size: clamp(1.3rem, 4vw, 1.8rem);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section h2::before {
+    content: '\2756';
+    color: hsl(45, 90%, 50%);
+    margin-right: 10px;
+}
+
+/* SEZIONE CHI SONO */
+#chi-sono {
+    text-align: justify;
+    margin-top: -20px;
+    z-index: 5;
+}
+
+#chi-sono p:first-of-type {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #315a7d;
+}
+
+.foto-profilo {
+    float: none;
+    text-align: center;
+    margin: 0 auto 16px;
+}
+
+.foto-profilo img {
+    width: 200px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    border: 5px solid hsl(45, 90%, 60%);
+}
+
+/* SEZIONE COMPETENZE */
+.titolo-secondario {
+    margin: 1rem 0 0.6rem;
+    font-style: italic;
+    color: #8492ad;
+}
+
+#competenze table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    table-layout: fixed;
+}
+
+#competenze th {
+    padding: 8px 6px;
+    color: hsl(220, 60%, 25%);
+    background-color: #f9f5ea;
+}
+
+#competenze td {
+    padding: 8px 6px;
+    border-bottom: 1px solid #ece6d8;
+    vertical-align: middle;
+    overflow-wrap: anywhere;
+}
+
+#competenze .tecnologia {
+    width: 50%;
+}
+
+#competenze .tecnologia .sotto-testo {
+    display: block;
+    font-size: 0.8rem;
+    font-style: italic;
+    color: #8492ad;
+}
+
+#competenze .barra {
+    height: 8px;
+    background-color: #ece6d8;
+    border-radius: 99px;
+    overflow: hidden;
+}
+
+#competenze .barra span {
+    display: block;
+    height: 100%;
+    background-color: hsl(45, 90%, 50%);
+    border-radius: 99px;
+}
+
+/* LIVELLI DELLE BARRE */
+#competenze .barra span.livello-html {
+    width: 85%;
+}
+
+#competenze .barra span.livello-css {
+    width: 75%;
+}
+
+#competenze .barra span.livello-git {
+    width: 35%;
+}
+
+#competenze .barra span.livello-vscode {
+    width: 80%;
+}
+
+/* SEZIONE ESPERIENZE */
+#esperienze table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    table-layout: fixed;
+}
+
+#esperienze caption {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: hsl(220, 30%, 40%);
+}
+
+#esperienze th,
+#esperienze td {
+    border: 1px solid #ece6d8;
+    padding: 7px 5px;
+    text-align: left;
+    overflow-wrap: anywhere;
+}
+
+#esperienze th {
+    background-color: hsl(220, 60%, 25%);
+    color: white;
+}
+
+/* SEZIONE PROGETTI */
+.progetto {
+    padding: 20px;
+    margin-top: 15px;
+    border-left: 4px solid hsl(220, 60%, 30%);
+    border-bottom: 1px solid hsl(45, 90%, 50%);
+}
+
+.progetto:nth-of-type(odd) {
+    background-color: #faf8ef;
+}
+
+.progetto:nth-of-type(even) {
+    background-color: white;
+}
+
+.progetto h3 {
+    color: hsl(220, 30%, 25%);
+}
+
+a {
+    color: hsl(220, 60%, 30%);
+}
+
+a:hover {
+    color: hsl(220, 60%, 45%);
+}
+
+/* FORM */
+label {
+    font-weight: bold;
+    color: #2b2b2b;
+}
+
+input,
+select,
+textarea {
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 16px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    background-color: #fbf8f1;
+    border: 1px solid #d6cfbf;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    background-color: white;
+    color: hsl(220, 60%, 30%);
+    border: 1px solid hsl(220, 60%, 30%);
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #a39b87;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+}
+
+button[type="submit"] {
+    background-color: hsl(220, 60%, 30%);
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button[type="submit"]:hover {
+    background-color: hsl(220, 60%, 45%);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
+}
+
+/* FOOTER */
+footer {
+    width: 100%;
+    background-color: hsl(220, 40%, 15%);
+    color: white;
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 20px;
+}
+
+.contenitore-social {
+    margin-bottom: 10px;
+}
+
+footer .icona-social {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.08);
+    color: white;
+    border-radius: 50%;
+    margin: 0 5px;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+footer .icona-social i {
+    vertical-align: middle;
+}
+
+footer .icona-social:hover {
+    color: hsl(220, 60%, 20%);
+    background-color: hsl(45, 90%, 60%);
+}
+
+/* TABLET */
+@media (min-width: 768px) {
+
+    header {
+        padding: 30px 20px 0;
+    }
+
+    header h1 {
+        font-size: 3rem;
+    }
+
+    nav li {
+        margin: 0 10px;
+    }
+
+    nav a {
+        padding: 0 10px;
+    }
+
+    main {
+        width: 90%;
+        margin: 30px auto;
+    }
+
+    section {
+        padding: 30px;
+        margin-bottom: 30px;
+    }
+
+    #chi-sono {
+        margin-top: -35px;
+    }
+
+    .foto-profilo {
+        float: left;
+        text-align: left;
+        margin-right: 25px;
+        margin-bottom: 10px;
+    }
+
+    #competenze th,
+    #competenze td {
+        padding: 10px 12px;
+    }
+
+    #esperienze th,
+    #esperienze td {
+        padding: 10px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    select,
+    textarea {
+        width: 60%;
+    }
+
+    button[type="submit"] {
+        width: 30%;
+    }
+}
+
+/* DESKTOP */
+@media (min-width: 1200px) {
+
+    header h1 {
+        font-size: 3.2rem;
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+}
