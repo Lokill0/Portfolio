@@ -452,3 +452,19 @@ footer .icona-social:hover {
         font-size: 2rem;
     }
 }
+
+#topPage {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 1100;
+    width: 45px;
+    height: 45px;
+    background-color: #d6a928;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    line-height: 45px;
+    font-size: 1.5rem;
+    border-radius: 50%;
+}
