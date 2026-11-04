@@ -113,6 +113,10 @@ section {
     position: relative;
 }
 
+section {
+    scroll-margin-top: 200px;
+}
+
 .capolettera {
     font-size: 3rem;
     font-weight: bold;
@@ -195,37 +199,6 @@ section h2::before {
     font-size: 0.8rem;
     font-style: italic;
     color: #8492ad;
-}
-
-#competenze .barra {
-    height: 8px;
-    background-color: #ece6d8;
-    border-radius: 99px;
-    overflow: hidden;
-}
-
-#competenze .barra span {
-    display: block;
-    height: 100%;
-    background-color: hsl(45, 90%, 50%);
-    border-radius: 99px;
-}
-
-/* LIVELLI DELLE BARRE */
-#competenze .barra span.livello-html {
-    width: 85%;
-}
-
-#competenze .barra span.livello-css {
-    width: 75%;
-}
-
-#competenze .barra span.livello-git {
-    width: 35%;
-}
-
-#competenze .barra span.livello-vscode {
-    width: 80%;
 }
 
 /* SEZIONE ESPERIENZE */
@@ -467,4 +440,58 @@ footer .icona-social:hover {
     line-height: 45px;
     font-size: 1.5rem;
     border-radius: 50%;
+}
+
+/* FINESTRA MODALE */
+.overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2000;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    max-width: 480px;
+    width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.modal h2 {
+    color: hsl(220, 60%, 25%);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.closeModal {
+    display: block;
+    margin-left: auto;
+    background-color: #d6a928;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#openModal {
+    background-color: #d6a928;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#openModal:hover {
+    background-color: hsl(45, 90%, 50%);
 }
